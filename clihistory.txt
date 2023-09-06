@@ -1,0 +1,24 @@
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
+$ pwd
+/c/Users/q7066/mygit/CISC3115_Yuefeng
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
+$ cd /c/Users/q7066/mygit/CISC3115_Yuefeng/javacode
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
+$ cd ..
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
+$ cd javacode
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
+$ cd ..
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
+$ ls -a
+./  ../  .git/  clihistory.txt  javacode/  README.md
+
+q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
+$ ls -ah
+./  ../  .git/  clihistory.txt  javacode/  README.md
