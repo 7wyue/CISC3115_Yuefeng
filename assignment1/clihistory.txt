@@ -1,24 +1,20 @@
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ pwd
-/c/Users/q7066/mygit/CISC3115_Yuefeng
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ cd /c/Users/q7066/mygit/CISC3115_Yuefeng/javacode
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
-$ cd ..
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ cd javacode/
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
-$ cd ..
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ ls -a
-./  ../  .git/  clihistory.txt  javacode/  README.md
-
-q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ ls -ah
-./  ../  .git/  clihistory.txt  javacode/  README.md
+   29  ls
+   30  cd CISC3115_yuefeng
+   31  mkdir javacode
+   32  ls
+   33  pwd
+   34  cd CISC3115_yuefeng
+   35  pwd
+   36  cd /c/Users/q7066/mygit/CISC3115_yuefeng/Assignment1/javacode
+   37  cd ..
+   38  cd ..
+   39  cd Assignment1
+   40  cd javacode/
+   41  cd ..
+   42  cd ..
+   43  ls -l
+   44  ls
+   45  history Assignment1/clihistory.txt
+   46  history > Assignment1/clihistory.txt
+   47  cat Assignment1/clihistory.txt
+   48  history | tail -n 20 > Assignment1/clihistory.txt
