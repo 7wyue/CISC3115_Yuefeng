@@ -10,7 +10,7 @@ q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
 $ cd ..
 
 q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng (main)
-$ cd javacode
+$ cd javacode/
 
 q7066@TABLET-IIJ5GFRC MINGW64 ~/mygit/CISC3115_Yuefeng/javacode (main)
 $ cd ..
