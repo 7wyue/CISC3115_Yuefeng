@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ImmutableObject {
+class ImmutableObject {
 
 
     //Part 1
@@ -38,47 +38,28 @@ public class ImmutableObject {
         System.out.println();
 
 
+
+        //
+        //
         //part 2
-        String[][] myArray = {
-            //Car
-            {"BMW", "Ferrari", "Lambo"},
-            //Food
-            {"pizza", "burger", "dumpling"}
-        };
+       
         Scanner sc = new Scanner(System.in);
         String inputwords;
-        boolean isin;
-        System.out.println("Enter a word: ");
-        inputwords = sc.next();
-        while(sc.hasNextLine()){
         
+
+        while(true){
+            System.out.println("Enter a word: ");
+            inputwords = sc.next();
         
-        if(StopChecking(inputwords)){
-            break;
+            if(StopChecking(inputwords)){
+                sc.close();
+                break;
 
-        }
-        for(int i =0; i<myArray.length;i++){
-
-            for(int j =0; j<myArray[i].length;j++){
-                isin=false;
-                if(inputwords.equals(myArray[i][j]))
-                    isin = true;
-                    
- 
-                
-                if(isin)
-                    System.out.println("inputwords is in the 2D array");
-                    
-                System.out.println("inputwords is not in the 2D array");
+            }else
+                checkWordInArray(inputwords);
+            
 
 
-                
-
-            }
-
-        }
-        System.out.println("Enter a word: ");
-        inputwords = sc.next();
         }
 
 
@@ -86,12 +67,34 @@ public class ImmutableObject {
 
     public static boolean StopChecking(String inputwords){
 
-        if(inputwords.equals("STOP")){
+        return inputwords.equals("STOP");
 
-            return true;
-        }
-        return false;
+   
+
+    }
+
+    public static void checkWordInArray(String inputwords){
         
+         String[][] myArray = {
+            //Car
+            {"BMW", "Ferrari", "Lambo"},
+            //Food
+            {"pizza", "burger", "dumpling"}
+        };
+        boolean isin=false;
+            for(int i =0; i<myArray.length;i++){
+
+                for(int j =0; j<myArray[i].length;j++){
+                    isin=inputwords.equals(myArray[i][j]);
+                    if(isin){
+                    System.out.println("inputwords is in the 2D array");
+                    return;}
+
+                }
+
+            }
+            if(!isin)
+                System.out.println("inputwords is not in the 2D array");
 
     }
 }
