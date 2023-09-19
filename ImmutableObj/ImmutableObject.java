@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class ImmutableObject {
+public class ImmutableObject {
 
 
     //Part 1
@@ -38,21 +38,11 @@ class ImmutableObject {
         System.out.println();
 
 
-<<<<<<< HEAD
 
         //
         //
         //part 2
        
-=======
-        //part 2 not finished yet
-        String[][] myArray = {
-            //Car
-            {"BMW", "Ferrari", "Lambo"},
-            //Food
-            {"pizza", "burger", "dumpling"}
-        };
->>>>>>> 861251f5e926361c25ea9b3f50286800db3fb574
         Scanner sc = new Scanner(System.in);
         String inputwords;
         
