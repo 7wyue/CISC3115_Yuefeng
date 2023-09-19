@@ -38,7 +38,7 @@ public class ImmutableObject {
         System.out.println();
 
 
-        //part 2
+        //part 2 not finished yet
         String[][] myArray = {
             //Car
             {"BMW", "Ferrari", "Lambo"},
