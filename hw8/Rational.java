@@ -13,14 +13,14 @@ public class Rational extends Number implements Comparable<Rational> {
             
             long gcd = gcd(numerator, denominator);
             System.out.println(gcd);
-            if(numerator%gcd==0&&denominator%gcd==0){
+            // if(numerator%gcd==0&&denominator%gcd==0){
             this.numerator = numerator / gcd;
             
             this.denominator = denominator / gcd;
-            }else{
-                this.numerator=numerator;
-                this.denominator=denominator;
-            }
+            // }else{
+            //     this.numerator=numerator;
+            //     this.denominator=denominator;
+            // }
         }
 
     }
@@ -89,12 +89,17 @@ public class Rational extends Number implements Comparable<Rational> {
         numerator = Math.abs(n);
         denominator = Math.abs(d);
         mod = numerator % denominator;
+                    System.out.println(mod);
         while (mod != 0) {
-            
-            denominator = mod;
-            mod = numerator / denominator;
-            numerator = denominator;
 
+            numerator = denominator;
+            System.out.println(numerator);
+            denominator = mod;
+            System.out.println(denominator);
+            mod = numerator % denominator;
+            System.out.println(mod);
+            System.out.println("------");
+            
         }
 
         return denominator;
@@ -133,15 +138,15 @@ public class Rational extends Number implements Comparable<Rational> {
     }
     public static void main(String[] args) {
         // Create and initialize two rational numbers r1 and r2
-		Rational r1 = new Rational(14, 28);
-		Rational r2 = new Rational(2, 3);
+		Rational r1 = new Rational(12, 13);
+		// Rational r2 = new Rational(2, 3);
 
-		// Display results
+		// // Display results
         System.out.println(r1);
-		System.out.println(r1 + " + " + r2 + " = " + r1.add(r2));
-		System.out.println(r1 + " - " + r2 + " = " + r1.subtract(r2));
-		System.out.println(r1 + " * " + r2 + " = " + r1.multiply(r2));
-		System.out.println(r1 + " / " + r2 + " = " + r1.divide(r2));
-		System.out.println(r2 + " is " + r2.doubleValue());
+		// System.out.println(r1 + " + " + r2 + " = " + r1.add(r2));
+		// System.out.println(r1 + " - " + r2 + " = " + r1.subtract(r2));
+		// System.out.println(r1 + " * " + r2 + " = " + r1.multiply(r2));
+		// System.out.println(r1 + " / " + r2 + " = " + r1.divide(r2));
+		// System.out.println(r2 + " is " + r2.doubleValue());
     }
 }
